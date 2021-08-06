@@ -34,7 +34,7 @@ svg {
   display: block;
 }
 
-.description {
+.description,.descriptionProduct{
   pointer-events: none;
   position: absolute;
   font-size: 18px;
@@ -51,7 +51,7 @@ svg {
   display: none;
 }
 
-.info {
+.info,.infoProduct {
   position: absolute;
   color: gray;
   border-radius: 5px;
@@ -66,7 +66,8 @@ svg {
   transform: translateY(-50%);
 }
 
-.info:after {
+.info:after,
+.infoProduct:after {
   content: "";
   position: absolute;
   left: 0%;
@@ -80,11 +81,13 @@ svg {
   transform: translateY(-50%);
 }
 
-.description.active {
+.description.active,
+.descriptionProduct.active {
   display: block;
 }
 
-.info.active {
+.info.active,
+.infoProduct.active {
   display: block;
 }
 
@@ -128,6 +131,6 @@ border-top: 10px solid white;
   fill: #ec008c !important;
 }
 
-
-
-
+.disable{
+  pointer-events: none;
+}

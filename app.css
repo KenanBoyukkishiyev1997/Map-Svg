@@ -134,3 +134,27 @@ border-top: 10px solid white;
 .disable{
   pointer-events: none;
 }
+
+/*  START DARK MODE */
+.darkmodeBtn{
+  background-color: #3F3F3F;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 20px;
+  padding: 5px 7px;
+  float: right;
+  margin: -40px 20px;
+}
+:root {
+  --background-color: #fff;
+  --text-color: #000;
+}
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+[data-theme="dark"] {
+  --background-color: #3F3F3F;
+  --text-color: #fff;
+}
+/*  END DARK MODE */
